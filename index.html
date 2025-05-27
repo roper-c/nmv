@@ -1,15 +1,14 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Welcome</title>
+  <title>Interactive Welcome</title>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="https://animate.style/animate.min.css"/>
 </head>
 <body>
-  <!-- Welcome Overlay -->
+  <!-- 1. Welcome Overlay -->
   <div id="welcome-overlay" class="overlay animate__animated animate__fadeIn">
     <div class="welcome-content">
       <h1>Welcome to IT Support</h1>
@@ -17,9 +16,16 @@
     </div>
   </div>
 
-  <!-- Main Site Content -->
+  <!-- 2. Main Content with Parallax Layers -->
   <div id="main-content" class="hidden">
-    <!-- Your regular site HTML here -->
+    <div class="parallax" data-depth="0.1"></div>
+    <div class="parallax" data-depth="0.3"></div>
+    <div class="parallax" data-depth="0.6"></div>
+    <div class="page-content">
+      <!-- Your regular page content goes here -->
+      <h2>IT Support Dashboard</h2>
+      <p>Explore our resources below.</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
