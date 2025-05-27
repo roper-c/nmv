@@ -1,26 +1,27 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IT Support</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Welcome</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://animate.style/animate.min.css"/>
 </head>
 <body>
-  <header>
-    <h1>Company IT Support</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome to IT Support</h2>
-    <p>This site provides resources and help for our internal IT division.</p>
-  </main>
-  <footer>
-    <p>© 2025 Company Name. All rights reserved.</p>
-  </footer>
+  <!-- Welcome Overlay -->
+  <div id="welcome-overlay" class="overlay animate__animated animate__fadeIn">
+    <div class="welcome-content">
+      <h1>Welcome to IT Support</h1>
+      <button id="enter-btn">Enter Site</button>
+    </div>
+  </div>
+
+  <!-- Main Site Content -->
+  <div id="main-content" class="hidden">
+    <!-- Your regular site HTML here -->
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
