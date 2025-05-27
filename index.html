@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Interactive Welcome</title>
   <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://animate.style/animate.min.css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <!-- 1. Welcome Overlay -->
   <div id="welcome-overlay" class="overlay animate__animated animate__fadeIn">
     <div class="welcome-content">
+      <!-- 1.2 Added crest image here -->
+      <img src="assets/nmv_crest.png" alt="Company Crest" class="crest"/>
       <h1>Welcome to IT Support</h1>
       <button id="enter-btn">Enter Site</button>
     </div>
@@ -22,7 +25,6 @@
     <div class="parallax" data-depth="0.3"></div>
     <div class="parallax" data-depth="0.6"></div>
     <div class="page-content">
-      <!-- Your regular page content goes here -->
       <h2>IT Support Dashboard</h2>
       <p>Explore our resources below.</p>
     </div>
